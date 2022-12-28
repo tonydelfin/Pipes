@@ -1,0 +1,128 @@
+<h1>Decimalpipe y porcentajes</h1>
+<p>
+    Pipes incluidos en Angular (Common Module).
+</p>
+
+<div class="grid">
+
+    <div class="col-6">
+        <p-card header="Ventas netas:  {{ventasNetas}}" subheader="Uso del pipe decimalPipe">
+
+           <ul>
+                <li> 
+                    
+                    "ventasNetas | number"
+                </li>
+                <li> 
+                    
+                    "ventasNetas | number:'1.2-2'"
+                </li>
+                <li> 
+                   
+                    "ventasNetas | number:'1.4-4'"
+                </li>
+                <li> 
+                    
+                    "ventasNetas | number:'1.4-4':'fr'"
+                </li>
+                
+           </ul>
+
+        </p-card>
+    </div>
+    <div class="col-6">
+        <p-card header="Ventas netas:  {{ventasNetas}}" subheader="Resultados del pipe decimalPipe">
+
+           <ul>
+                <li> 
+                    <i class="pi pi-dollar"></i>
+                    {{ventasNetas | number}}
+                </li>
+                <li> 
+                    <i class="pi pi-dollar"></i>
+                    {{ventasNetas | number:'1.2-2'}}
+                </li>
+                <li> 
+                    <i class="pi pi-dollar"></i>
+                    {{ventasNetas | number:'1.4-4'}}
+                </li>
+                <li> 
+                    <i class="pi pi-dollar"></i>
+                    {{ventasNetas | number:'1.4-4':'fr'}}
+                </li>
+           </ul>
+
+        </p-card>
+    </div>
+</div>
+<!-- fin decimalpipe -->
+<div class="grid">
+
+    <div class="col-6">
+        <p-card header="Ventas netas uso de currency" subheader="Uso del pipe decimalPipe">
+
+           <ul>
+                <li> 
+                    
+                    "ventasNetas + 2000000 | currency:'CAD':'symbol-narrow':'1.0-4'"
+                </li>
+               
+                
+           </ul>
+
+        </p-card>
+    </div>
+    <div class="col-6">
+        <p-card header="Ventas netas uso de currency" subheader="Resultados del pipe decimalPipe">
+
+           <ul>
+                <li> 
+                   
+                    {{ventasNetas + 2000000 | currency:'CAD':'symbol-narrow':'1.0-4'}}
+                </li>
+               
+           </ul>
+
+        </p-card>
+    </div>
+</div>
+<!-- fin uso currency -->
+
+<div class="grid">
+
+    <div class="col-6">
+        <p-card header="Porcentaje:  {{porcentaje}} " subheader="Uso del pipe percent">
+
+           <ul>
+                <li> 
+                    
+                    "porcentaje | percent"
+                </li>
+                <li> 
+                    
+                    "porcentaje | percent:'2.2-2"
+                </li>
+               
+                
+           </ul>
+
+        </p-card>
+    </div>
+    <div class="col-6">
+        <p-card header="Ventas netas uso de currency" subheader="Resultados del pipe percent">
+
+           <ul>
+                <li> 
+                   
+                    {{porcentaje | percent}}
+                </li>
+                <li> 
+                   
+                    {{porcentaje | percent:'2.2-2'}}
+                </li>
+               
+           </ul>
+
+        </p-card>
+    </div>
+</div>
